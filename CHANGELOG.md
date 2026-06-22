@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.1 - 2026-06-22
+
+- Fixed share submission failures caused by unstable network connections.
+
 ## v0.1.0 - 2026-06-18
 
 Initial release of `six-pearl-miner`, a Pearl GPU miner developed by 6block.
