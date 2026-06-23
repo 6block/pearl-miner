@@ -35,7 +35,7 @@ Fortune Pool 使用 SRB/HeroMiners 风格的下行协议，需显式指定 `--pr
 
 ```bash
 ./six-pearl-miner \
-  --pool 101.47.77.211:8888 \
+  --global.pearlfortune.org:8888 \
   --protocol fortune \
   --wallet <你的 Pearl 地址>.<矿工名>
 ```
@@ -44,7 +44,7 @@ Fortune Pool 使用 SRB/HeroMiners 风格的下行协议，需显式指定 `--pr
 
 ```bash
 ./six-pearl-miner \
-  --pool 101.47.77.211:8888 \
+  --global.pearlfortune.org:8888 \
   --protocol fortune \
   --wallet prl1pnjxxxxxxxxxxxxxxxxxxxx.rig
 ```
@@ -113,7 +113,7 @@ Command:
 
 ```bash
 ./six-pearl-miner \
-  --pool 101.47.77.211:8888 \
+  --global.pearlfortune.org:8888 \
   --protocol fortune \
   --wallet <your Pearl address>.<worker>
 ```
@@ -122,7 +122,7 @@ Example:
 
 ```bash
 ./six-pearl-miner \
-  --pool 101.47.77.211:8888 \
+  --global.pearlfortune.org:8888 \
   --protocol fortune \
   --wallet prl1pnjsqalxxxxxxxxxxxxx.rig
 ```
@@ -187,7 +187,7 @@ Fortune Pool использует downstream-протокол в стиле SRB/
 
 ```bash
 ./six-pearl-miner \
-  --pool 101.47.77.211:8888 \
+  --global.pearlfortune.org:8888 \
   --protocol fortune \
   --wallet <ваш Pearl адрес>.<воркер>
 ```
@@ -196,7 +196,7 @@ Fortune Pool использует downstream-протокол в стиле SRB/
 
 ```bash
 ./six-pearl-miner \
-  --pool 101.47.77.211:8888 \
+  --global.pearlfortune.org:8888 \
   --protocol fortune \
   --wallet prl1pnjxxxxxxxxxxxxxxxxxxxx.rig
 ```
