@@ -49,6 +49,32 @@ Fortune Pool 使用 SRB/HeroMiners 风格的下行协议，需显式指定 `--pr
   --wallet prl1pnjxxxxxxxxxxxxxxxxxxxx.rig
 ```
 
+#### HiveOS
+
+```json
+{
+    "name": "pearl - 6block",
+    "isFavorite": false,
+    "items": [
+        {
+            "coin": "PEARL",
+            "pool_ssl": false,
+            "dpool_ssl": false,
+            "miner": "custom",
+            "miner_alt": "six-pearl",
+            "miner_config": {
+                "url": "global.pearlfortune.org:8888",
+                "miner": "six-pearl",
+                "template": "%WAL%.%WORKER_NAME%",
+                "install_url": "http://flight.minerx.vip/pearl/six-pearl-0.1.2.tar.gz",
+                "user_config": "--protocol fortune"
+            },
+            "pool_geo": []
+        }
+    ]
+}
+```
+
 #### Lucky Pool
 
 | 节点 | 地址 | 端口 |
