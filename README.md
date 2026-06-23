@@ -66,7 +66,7 @@ Fortune Pool 使用 SRB/HeroMiners 风格的下行协议，需显式指定 `--pr
                 "url": "global.pearlfortune.org:8888",
                 "miner": "six-pearl",
                 "template": "%WAL%.%WORKER_NAME%",
-                "install_url": "http://flight.minerx.vip/pearl/six-pearl-0.1.2.tar.gz",
+                "install_url": "https://github.com/6block/pearl-miner/releases/download/v0.1.1/six-pearl-miner.tar.gz",
                 "user_config": "--protocol fortune"
             },
             "pool_geo": []
