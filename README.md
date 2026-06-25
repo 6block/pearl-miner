@@ -101,6 +101,30 @@ Fortune Pool 使用 SRB/HeroMiners 风格的下行协议，需显式指定 `--pr
   --wallet prl1pnjxxxxxxxxxxxxxxxxxxxx.rig1
 ```
 
+#### Herominers Pool
+
+| 节点 | 地址 | 端口 |
+|---|---|---|
+| 法国 | `fr.pearl.herominers.com` | 1200 |
+
+启动命令：
+
+```bash
+./six-pearl-miner \
+  --pool fr.pearl.herominers.com:1200 \
+  --wallet <你的 Pearl 地址>.<矿工名> \
+  --proof-field plain_proof_zst
+```
+
+示例：
+
+```bash
+./six-pearl-miner \
+  --pool fr.pearl.herominers.com:1200 \
+  --wallet prl1pnjxxxxxxxxxxxxxxxxxxxx.rig1 \
+  --proof-field plain_proof_zst
+```
+
 ---
 
 ## English
