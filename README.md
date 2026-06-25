@@ -204,6 +204,30 @@ Example:
   2>&1 | tee lucky-pool.log
 ```
 
+#### Herominers Pool
+
+| Location | Address | Port |
+|---|---|---|
+| France | `fr.pearl.herominers.com` | 1200 |
+
+Command：
+
+```bash
+./six-pearl-miner \
+  --pool fr.pearl.herominers.com:1200 \
+  --wallet <your Pearl address>.<worker> \
+  --proof-field plain_proof_zst
+```
+
+Example：
+
+```bash
+./six-pearl-miner \
+  --pool fr.pearl.herominers.com:1200 \
+  --wallet prl1pnjxxxxxxxxxxxxxxxxxxxx.rig1 \
+  --proof-field plain_proof_zst
+```
+
 ---
 
 ## Русский
@@ -275,4 +299,28 @@ Fortune Pool использует downstream-протокол в стиле SRB/
 ./six-pearl-miner \
   --pool pearl-ru.lproute.com:3365 \
   --wallet prl1pnjxxxxxxxxxxxxxxxxxxxx.rig1
+```
+
+#### Herominers Pool
+
+| Локация | Адрес | Порт |
+|---|---|---|
+| Франция | `fr.pearl.herominers.com` | 1200 |
+
+Команда запуска：
+
+```bash
+./six-pearl-miner \
+  --pool fr.pearl.herominers.com:1200 \
+  --wallet <ваш Pearl адрес>.<воркер> \
+  --proof-field plain_proof_zst
+```
+
+Пример：
+
+```bash
+./six-pearl-miner \
+  --pool fr.pearl.herominers.com:1200 \
+  --wallet prl1pnjxxxxxxxxxxxxxxxxxxxx.rig1 \
+  --proof-field plain_proof_zst
 ```
