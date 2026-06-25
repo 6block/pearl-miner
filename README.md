@@ -200,8 +200,7 @@ Example:
 ```bash
 ./six-pearl-miner \
   --pool pearl-hk.lproute.com:3365 \
-  --wallet prl1pnjsqalse3pxxxxxxxxxxxx.rig1 \
-  2>&1 | tee lucky-pool.log
+  --wallet prl1pnjsqalse3pxxxxxxxxxxxx.rig1
 ```
 
 #### Herominers Pool
