@@ -16,7 +16,7 @@
 |---|---|---|---|
 | Ampere | RTX 3080 | sm_86 | ~104 TH/s |
 | Ampere | RTX 3090 | sm_86 | ~115 TH/s |
-| Ada | RTX 4090 | sm_89 | ~280 TH/s |
+| Ada | RTX 4090 | sm_89 | ~285 TH/s |
 | Hopper | H100 | sm_90 | ~680 TH/s |
 
 > 实际算力受 GPU 频率、功耗墙、散热及矿池难度影响，存在 ±5% 波动。
@@ -142,7 +142,7 @@ no extra files needed.
 |---|---|---|---|
 | Ampere | RTX 3080 | sm_86 | ~104 TH/s |
 | Ampere | RTX 3090 | sm_86 | ~115 TH/s |
-| Ada | RTX 4090 | sm_89 | ~280 TH/s |
+| Ada | RTX 4090 | sm_89 | ~285 TH/s |
 | Hopper | H100 | sm_90 | ~680 TH/s |
 
 > Actual hashrate varies by GPU clock, power limit, cooling, and pool
@@ -241,7 +241,7 @@ Example：
 |---|---|---|---|
 | Ampere | RTX 3080 | sm_86 | ~104 TH/s |
 | Ampere | RTX 3090 | sm_86 | ~115 TH/s |
-| Ada | RTX 4090 | sm_89 | ~280 TH/s |
+| Ada | RTX 4090 | sm_89 | ~285 TH/s |
 | Hopper | H100 | sm_90 | ~680 TH/s |
 
 > Фактический хешрейт зависит от частоты GPU, лимита мощности, охлаждения и сложности пула. Возможны колебания около ±5%.
