@@ -16,7 +16,7 @@
 |---|---|---|---|
 | Ampere | RTX 3080 | sm_86 | ~104 TH/s |
 | Ampere | RTX 3090 | sm_86 | ~115 TH/s |
-| Ada | RTX 4090 | sm_89 | ~280 TH/s |
+| Ada | RTX 4090 | sm_89 | ~285 TH/s |
 | Hopper | H100 | sm_90 | ~680 TH/s |
 
 > 实际算力受 GPU 频率、功耗墙、散热及矿池难度影响，存在 ±5% 波动。
@@ -27,7 +27,7 @@
 
 | 节点 | 地址 | 端口 |
 |---|---|---|
-| 香港 | `101.47.77.211` | 8888 |
+| 新加坡 | `global.pearlfortune.org` | 8888 |
 
 Fortune Pool 使用 SRB/HeroMiners 风格的下行协议，需显式指定 `--protocol fortune`。
 
@@ -35,7 +35,7 @@ Fortune Pool 使用 SRB/HeroMiners 风格的下行协议，需显式指定 `--pr
 
 ```bash
 ./six-pearl-miner \
-  --pool 101.47.77.211:8888 \
+  --pool global.pearlfortune.org:8888 \
   --protocol fortune \
   --wallet <你的 Pearl 地址>.<矿工名>
 ```
@@ -44,9 +44,35 @@ Fortune Pool 使用 SRB/HeroMiners 风格的下行协议，需显式指定 `--pr
 
 ```bash
 ./six-pearl-miner \
-  --pool 101.47.77.211:8888 \
+  --pool global.pearlfortune.org:8888 \
   --protocol fortune \
   --wallet prl1pnjxxxxxxxxxxxxxxxxxxxx.rig
+```
+
+#### HiveOS
+
+```json
+{
+    "name": "pearl - 6block",
+    "isFavorite": false,
+    "items": [
+        {
+            "coin": "PEARL",
+            "pool_ssl": false,
+            "dpool_ssl": false,
+            "miner": "custom",
+            "miner_alt": "six-pearl",
+            "miner_config": {
+                "url": "global.pearlfortune.org:8888",
+                "miner": "six-pearl",
+                "template": "%WAL%.%WORKER_NAME%",
+                "install_url": "https://github.com/6block/pearl-miner/releases/download/v0.1.1/six-pearl-0.1.1.tar.gz",
+                "user_config": "--protocol fortune"
+            },
+            "pool_geo": []
+        }
+    ]
+}
 ```
 
 #### Lucky Pool
@@ -75,6 +101,30 @@ Fortune Pool 使用 SRB/HeroMiners 风格的下行协议，需显式指定 `--pr
   --wallet prl1pnjxxxxxxxxxxxxxxxxxxxx.rig1
 ```
 
+#### Herominers Pool
+
+| 节点 | 地址 | 端口 |
+|---|---|---|
+| 法国 | `fr.pearl.herominers.com` | 1200 |
+
+启动命令：
+
+```bash
+./six-pearl-miner \
+  --pool fr.pearl.herominers.com:1200 \
+  --wallet <你的 Pearl 地址>.<矿工名> \
+  --proof-field plain_proof_zst
+```
+
+示例：
+
+```bash
+./six-pearl-miner \
+  --pool fr.pearl.herominers.com:1200 \
+  --wallet prl1pnjxxxxxxxxxxxxxxxxxxxx.rig1 \
+  --proof-field plain_proof_zst
+```
+
 ---
 
 ## English
@@ -92,7 +142,7 @@ no extra files needed.
 |---|---|---|---|
 | Ampere | RTX 3080 | sm_86 | ~104 TH/s |
 | Ampere | RTX 3090 | sm_86 | ~115 TH/s |
-| Ada | RTX 4090 | sm_89 | ~280 TH/s |
+| Ada | RTX 4090 | sm_89 | ~285 TH/s |
 | Hopper | H100 | sm_90 | ~680 TH/s |
 
 > Actual hashrate varies by GPU clock, power limit, cooling, and pool
@@ -104,7 +154,7 @@ no extra files needed.
 
 | Location | Address | Port |
 |---|---|---|
-| Hong Kong | `101.47.77.211` | 8888 |
+| Singapore | `global.pearlfortune.org` | 8888 |
 
 Fortune Pool uses an SRB/HeroMiners-style downstream protocol. You must specify
 `--protocol fortune`.
@@ -113,7 +163,7 @@ Command:
 
 ```bash
 ./six-pearl-miner \
-  --pool 101.47.77.211:8888 \
+  --pool global.pearlfortune.org:8888 \
   --protocol fortune \
   --wallet <your Pearl address>.<worker>
 ```
@@ -122,7 +172,7 @@ Example:
 
 ```bash
 ./six-pearl-miner \
-  --pool 101.47.77.211:8888 \
+  --pool global.pearlfortune.org:8888 \
   --protocol fortune \
   --wallet prl1pnjsqalxxxxxxxxxxxxx.rig
 ```
@@ -150,8 +200,31 @@ Example:
 ```bash
 ./six-pearl-miner \
   --pool pearl-hk.lproute.com:3365 \
-  --wallet prl1pnjsqalse3pxxxxxxxxxxxx.rig1 \
-  2>&1 | tee lucky-pool.log
+  --wallet prl1pnjsqalse3pxxxxxxxxxxxx.rig1
+```
+
+#### Herominers Pool
+
+| Location | Address | Port |
+|---|---|---|
+| France | `fr.pearl.herominers.com` | 1200 |
+
+Command：
+
+```bash
+./six-pearl-miner \
+  --pool fr.pearl.herominers.com:1200 \
+  --wallet <your Pearl address>.<worker> \
+  --proof-field plain_proof_zst
+```
+
+Example：
+
+```bash
+./six-pearl-miner \
+  --pool fr.pearl.herominers.com:1200 \
+  --wallet prl1pnjxxxxxxxxxxxxxxxxxxxx.rig1 \
+  --proof-field plain_proof_zst
 ```
 
 ---
@@ -168,7 +241,7 @@ Example:
 |---|---|---|---|
 | Ampere | RTX 3080 | sm_86 | ~104 TH/s |
 | Ampere | RTX 3090 | sm_86 | ~115 TH/s |
-| Ada | RTX 4090 | sm_89 | ~280 TH/s |
+| Ada | RTX 4090 | sm_89 | ~285 TH/s |
 | Hopper | H100 | sm_90 | ~680 TH/s |
 
 > Фактический хешрейт зависит от частоты GPU, лимита мощности, охлаждения и сложности пула. Возможны колебания около ±5%.
@@ -179,7 +252,7 @@ Example:
 
 | Локация | Адрес | Порт |
 |---|---|---|
-| Гонконг | `101.47.77.211` | 8888 |
+| Сингапур | `global.pearlfortune.org` | 8888 |
 
 Fortune Pool использует downstream-протокол в стиле SRB/HeroMiners. Необходимо явно указать `--protocol fortune`.
 
@@ -187,7 +260,7 @@ Fortune Pool использует downstream-протокол в стиле SRB/
 
 ```bash
 ./six-pearl-miner \
-  --pool 101.47.77.211:8888 \
+  --pool global.pearlfortune.org:8888 \
   --protocol fortune \
   --wallet <ваш Pearl адрес>.<воркер>
 ```
@@ -196,7 +269,7 @@ Fortune Pool использует downstream-протокол в стиле SRB/
 
 ```bash
 ./six-pearl-miner \
-  --pool 101.47.77.211:8888 \
+  --pool global.pearlfortune.org:8888 \
   --protocol fortune \
   --wallet prl1pnjxxxxxxxxxxxxxxxxxxxx.rig
 ```
@@ -225,4 +298,28 @@ Fortune Pool использует downstream-протокол в стиле SRB/
 ./six-pearl-miner \
   --pool pearl-ru.lproute.com:3365 \
   --wallet prl1pnjxxxxxxxxxxxxxxxxxxxx.rig1
+```
+
+#### Herominers Pool
+
+| Локация | Адрес | Порт |
+|---|---|---|
+| Франция | `fr.pearl.herominers.com` | 1200 |
+
+Команда запуска：
+
+```bash
+./six-pearl-miner \
+  --pool fr.pearl.herominers.com:1200 \
+  --wallet <ваш Pearl адрес>.<воркер> \
+  --proof-field plain_proof_zst
+```
+
+Пример：
+
+```bash
+./six-pearl-miner \
+  --pool fr.pearl.herominers.com:1200 \
+  --wallet prl1pnjxxxxxxxxxxxxxxxxxxxx.rig1 \
+  --proof-field plain_proof_zst
 ```
