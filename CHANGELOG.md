@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.1.2 - 2026-06-27
+
+- Fixed hashrate performance loss in some cloud-platform Docker environments where providers apply CPU throttling.
+- If you do not experience performance issues, you can continue using v0.1.1.
+
 ## v0.1.1 - 2026-06-22
 
 - Fixed share submission failures caused by unstable network connections.
