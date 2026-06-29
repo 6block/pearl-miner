@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.1.3 - 2026-06-29
+
+- Improved stability and utilization for multi-GPU mining rigs.
+- Further reduced CPU usage to improve hashrate drops in containers and low-end machines.
+- Reduced per-GPU VRAM usage, saving about `1.25GB` per GPU under the default configuration.
+- Optimized startup and job-switching performance to reduce stalls and improve overall hashrate.
+- Improved hashrate stability during long-running sessions.
+- Added clearer pool difficulty information in logs.
+
 ## v0.1.2 - 2026-06-27
 
 - Fixed hashrate performance loss in some cloud-platform Docker environments where providers apply CPU throttling.
