@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.4 - 2026-06-29
+
+- Fixed a memory leak introduced in v0.1.3 that could cause OOM failures during long-running sessions.
+
 ## v0.1.3 - 2026-06-29
 
 - Improved stability and utilization for multi-GPU mining rigs.
